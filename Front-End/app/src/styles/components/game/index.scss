@@ -1,0 +1,20 @@
+
+.flex {
+    display: flex;
+    .section--game-container {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        position: relative;
+        margin: 0;
+        .block--board {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .none {
+        display: none
+    }
+}

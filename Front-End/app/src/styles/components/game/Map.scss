@@ -1,0 +1,104 @@
+
+.section--map-container {
+    background-color: $white;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    .main--map-tiles {
+        width: 100%;
+        height: calc(100vh - 265px);
+        background-color: $darkland;
+        position: relative;
+        box-shadow: inset 3px 5px 10px -5px black, inset -3px 4px 15px -5px black;
+    }
+}
+
+// All tiles
+[class*="block--tile"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+// Start point
+.block--tile_start {
+    background-color: $darkland;
+    color: $land;
+    .icon--start {
+        font-size: 3.2rem;
+    }
+    .block--start-data {
+        position: absolute;
+        color: $white;
+    }
+}
+
+// Character
+.block--tile_char {
+    border-radius: 50px;
+    z-index: 3;
+    .icon--char {
+        font-size: 1.7rem;
+        color: $white;
+    }
+}
+
+// Path colors
+.block--tile_path {
+    background-color: $grass;
+}
+.block--tile_oldpath {
+    color: $land / 1.5;
+    background-color: $darkland / 1;
+}
+.block--tile_blocked {
+    background-color: $land / 2;
+}
+.block--tile_corner {
+    background-color: $darkland;
+    color: $land;
+}
+
+// Directional
+.block--char-direct-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    z-index: -1;
+    .icon--char-direct {
+        font-size: 3rem;
+        position: absolute;
+        display: block;
+        color: rgba($darkland * 2, 0.75);
+    }
+    .icon--char-direct.center {
+        background-color: $grass;
+        height: 45px;
+        width: 45px;
+        z-index: 3;
+        border-radius: 100%;
+    }
+    .icon--char-direct.north {
+        top: 0;
+    }
+    .icon--char-direct.east {
+        right: 0;
+    }
+    .icon--char-direct.south {
+        bottom: 0;
+    }
+    .icon--char-direct.west {
+        left: 0;
+    }
+}

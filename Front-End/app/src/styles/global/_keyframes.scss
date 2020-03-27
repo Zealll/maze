@@ -1,0 +1,80 @@
+// keyframes
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes openUp {
+    0% {
+        height: 0%;
+    }
+    75% {
+        height: 200px;
+    }
+    100% {
+        height: unset;
+    }
+}
+
+
+@keyframes spaceOut {
+    0% {
+        opacity: 0;
+        letter-spacing: -20px;
+    }
+    100% {
+        opacity: 0.9;
+        letter-spacing: 25px;
+    }
+}
+
+@keyframes bigScroll { 0% { left: -10%; } 100% { left: -100%; } }
+@keyframes bigScrollTop {
+    0% {
+        // transform-origin: 0 0;
+        // transform: translateX(0) rotate(-10deg);
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+@keyframes bigScrollMiddle {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -100vw;
+    }
+}
+@keyframes bigScrollBottom {
+    0% {
+        left: 50vw;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+@keyframes scrollLeft {
+    0% {
+        right: -50%;
+    }
+    100% {
+        right: 50%;
+    }
+}
+
+@keyframes moveBackgroundPosition {
+    0% {
+        background-position-y: top;
+    }
+    100% {
+        background-position-y: bottom;
+    }
+}
+
