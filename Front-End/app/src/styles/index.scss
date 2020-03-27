@@ -1,0 +1,37 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Cabin|Permanent+Marker|Roboto+Condensed:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
+
+// Vars and Mixins
+// @import './global/_reset.scss';
+body {
+  margin: 0;
+}
+@import "./global/_variables.scss";
+@import "./global/_fonts.scss";
+@import "./global/_global.scss";
+// @import './global/_buttons.scss';
+@import "./global/_inputs.scss";
+@import "./global/_mixins.scss";
+
+// @import './global/_nprogress.scss';
+// @import './global/_transitions.scss';
+// @import "./global/_keyframes.scss";
+// @import "./global/_animations.scss";
+
+
+// Loader
+@import "./components/react-loading-spinner/Loading.scss";
+@import "./components/react-loading-spinner/react-spinner-loader.css";
+
+
+// Views and pages
+@import "./App.scss";
+
+@import "./pages/Home.scss";
+
+@import "./components/game/index.scss";
+@import "./components/game/Map.scss";
+@import "./components/game/Chat.scss";
+
+@import "./pages/login-register/LoginRegister.scss";
